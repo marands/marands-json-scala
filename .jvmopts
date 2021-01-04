@@ -1,0 +1,5 @@
+-Xmx2g
+-XX:+UseParallelGC
+-XX:MaxMetaspaceSize=1g
+-XX:ReservedCodeCacheSize=256m
+-Dfile.encoding=UTF8
