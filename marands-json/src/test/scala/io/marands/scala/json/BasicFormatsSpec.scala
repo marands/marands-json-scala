@@ -41,7 +41,7 @@ class BasicFormatsSpec extends AnyWordSpec {
 
   val basicJsonModelString1FileName: String = "json/basic_json_string_model1.json"
   val basicJsonModelString1: String =
-    Source.fromResource(basicJsonModelString1FileName).getLines.mkString
+    Source.fromResource(basicJsonModelString1FileName).getLines().mkString
 
   "Test" should {
     "Convert JsonString to Hash Map" in {
