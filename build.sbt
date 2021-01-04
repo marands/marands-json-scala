@@ -1,6 +1,7 @@
 inThisBuild(
   Seq(
     organization := "io.marands",
+    idePackagePrefix := Some("io.marands.scala"),
     homepage := Some(url("https://github.com/marands/marands-json-scala")),
     licenses := Seq("Apache 2" -> new URL("http://www.apache.org/licenses/LICENSE-2.0.txt")),
     scmInfo := Some(
@@ -27,7 +28,7 @@ inThisBuild(
 lazy val `marands-json-scala` =
   project
     .in(file("."))
-    .disablePlugins(MimaPlugin)
+//    .disablePlugins(MimaPlugin)
     .aggregate(
       `marands-json`,
       `akka-http-jackson`
